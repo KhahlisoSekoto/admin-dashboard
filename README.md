@@ -3,7 +3,7 @@
 A modern, highly responsive grid-based administrative dashboard built as part of **The Odin Project's** Full Stack JavaScript curriculum. This application showcases complex layout management using CSS Grid, Flexbox, and semantic HTML structure.
 
 ## 🚀 Live Preview
-* [View Live Project](YOUR_GITHUB_PAGES_LINK_HERE) *(Update this link once you activate GitHub Pages!)*
+* [View Live Project] https://khahlisosekoto.github.io/admin-dashboard/
 
 ## 🛠️ Built With
 - **HTML5** — Structured semantic elements (`<main>`, `<nav>`, `<section>`).
