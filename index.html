@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        
+        <!-- 1. SIDEBAR NAVIGATION -->
+        
+        <aside class="sidebar">
+            <div class="logo-container">
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M13,3V9H21V3H13M13,21H21V11H13V21M3,21H11V15H3V21M3,13H11V3H3V13Z" /></svg>
+                <span>Dashboard</span>
+            </div>
+
+            <ul class="nav-links main-nav">
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg><span>Home</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg><span>Profile</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6V9M14,14H6V12H14V14M18,8H6V6H18V8Z" /></svg><span>Messages</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L5,16L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z" /></svg><span>History</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M14,17H7V15H14V17M17,13H7V11H17V13M17,9H7V7H17V9Z" /></svg><span>Tasks</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8A2.5,2.5 0 0,1 7.5,10.5A2.5,2.5 0 0,1 5,13A2.5,2.5 0 0,1 2.5,10.5A2.5,2.5 0 0,1 5,8M19,8A2.5,2.5 0 0,1 21.5,10.5A2.5,2.5 0 0,1 19,13A2.5,2.5 0 0,1 16.5,10.5A2.5,2.5 0 0,1 19,8M12,14C14.76,14 17.76,15.22 18.66,16.24C17.4,17.95 15.34,19 12,19C8.66,19 6.6,17.95 5.34,16.24C6.24,15.22 9.24,14 12,14M5,14.5C6.42,14.5 7.82,14.94 8.87,15.65C8.04,16.89 6.69,18.06 5,18.43C4.34,17.27 4.35,15.71 5,14.5M19,14.5C19.65,15.71 19.66,17.27 19,18.43C17.31,18.06 15.96,16.89 15.13,15.65C16.18,14.94 17.58,14.5 19,14.5Z" /></svg><span>Communities</span></a></li>
+            </ul>
+
+            <ul class="nav-links settings-nav">
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.47,5.34 14.86,5.08L14.48,2.42C14.44,2.18 14.24,2 14,2H10C9.76,2 9.56,2.18 9.52,2.42L9.14,5.08C8.53,5.34 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.04 4.95,18.95L7.44,17.95C7.96,18.34 8.53,18.66 9.14,18.92L9.52,21.58C9.56,21.82 9.76,22 10,22H14C14.24,22 14.44,21.82 14.48,21.58L14.86,18.92C15.47,18.66 16.04,18.34 16.56,17.95L19.05,18.95C19.27,19.04 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg><span>Settings</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" /></svg><span>Support</span></a></li>
+                <li><a href="#"><svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12,12A3,3 0 1,0 15,15A3,3 0 0,0 12,12M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4Z" /></svg><span>Privacy</span></a></li>
+            </ul>
+        </aside>
+
+        
+        <!-- MAIN CONTENT SYSTEM (RIGHT SIDE) -->
+        
+        <div class="main-content">
+
+            <!-- 2. HEADER AREA -->
+            <header class="header">
+                <div class="header-row top-row">
+                    <div class="search-container">
+                        <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" fill="currentColor"/>
+                    </svg>
+                        <input type="text" class="search-input">
+                    </div>
+                    <div class="profile-actions">
+                        <svg class="bell-icon" xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12,2A2,2 0 0,0 10,4A2,2 0 0,0 10,4.29C7.12,5.14 5,7.82 5,11V17L3,19V20H21V19L19,17V11C19,7.82 16.88,5.14 14,4.29A2,2 0 0,0 14,4A2,2 0 0,0 12,2M12,22A2,2 0 0,0 14,20H10A2,2 0 0,0 12,22Z" /></svg>
+                        
+                            <div class="avatar small-avatar">
+  <svg viewBox="0 0 24 24" style="width: 100%; height: 100%; display: block;">
+    <circle cx="12" cy="12" r="12" fill="#cbd5e1"/>
+    <circle cx="12" cy="8" r="4" fill="#64748b"/>
+    <path d="M12 14c-4 0-6 2-6 3v1h12v-1c0-1-2-3-6-3z" fill="#64748b"/>
+  </svg>
+</div>
+                        <span class="header-username">Morgan Oakley</span>
+                    </div>
+                </div>
+
+                <div class="header-row bottom-row">
+                    <div class="user-greeting">
+                        <div class="avatar large-avatar">
+  <svg viewBox="0 0 24 24" style="width: 100%; height: 100%; display: block;">
+    <circle cx="12" cy="12" r="12" fill="#cbd5e1"/>
+    <circle cx="12" cy="8" r="4" fill="#64748b"/>
+    <path d="M12 14c-4 0-6 2-6 3v1h12v-1c0-1-2-3-6-3z" fill="#64748b"/>
+  </svg>
+</div>
+                        <div class="greeting-text">
+                            <p class="greeting-sub">Hi there,</p>
+                            <h3 class="greeting-main">Morgan Oakley (@morgan)</h3>
+                        </div>
+                    </div>
+                    <div class="header-buttons">
+                        <button class="btn">New</button>
+                        <button class="btn">Upload</button>
+                        <button class="btn">Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 3. DASHBOARD MAIN CONTENT DECK -->
+            <main class="dashboard-content">
+
+                <!-- PROJECTS SECTION (LEFT SIDE) -->
+                <div class="projects-section">
+                    <h2 class="section-title">Your Projects</h2>
+                    <div class="projects-grid">
+
+                        <!-- Card 1 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Super Cool Project</h4>
+                            <p class="card-body">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Less Cool Project</h4>
+                            <p class="card-body">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                                <!-- Card 3 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Impossible App</h4>
+                            <p class="card-body">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Easy Peasy App</h4>
+                            <p class="card-body">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Ad Blocker</h4>
+                            <p class="card-body">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="project-card">
+                            <h4 class="card-title">Money Maker</h4>
+                            <p class="card-body">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.</p>
+                            <div class="card-actions">
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17Z" /></svg>
+                                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10.59,13.41L13.17,16H18V18H13.17L10.59,20.59L9.17,19.17L11.34,17L9.17,14.83L10.59,13.41M12,6A3,3 0 0,1 15,9V11.17L17.17,13.34L18,12.5V9A6,6 0 0,0 6,9V12.5L6.83,13.34L9,11.17V9A3,3 0 0,1 12,6Z" /></svg>
+                            </div>
+                        </div>
+
+                    </div> <!-- Closes .projects-grid -->
+                </div> <!-- Closes .projects-section -->
+
+                
+                <!-- SIDE PANEL BOXES (ANNOUNCEMENTS & TRENDING) -->
+        
+                <div class="side-panel">
+
+                    <div class="announcements-section">
+                        <h2 class="section-title">Announcements</h2>
+                        <div class="panel-card announcements-card">
+                            <div class="announcement-item">
+                                <h5>Site Maintenance</h5>
+                                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue.</p>
+                            </div>
+                            <div class="announcement-item">
+                                <h5>Community Share Day</h5>
+                                <p>Nam vel lectus tincidunt, dictum nulla eu, ornare libero. Aliquam dictum accumsan porttitor.</p>
+                            </div>
+                            <div class="announcement-item">
+                                <h5>Updated Privacy Policy</h5>
+                                <p>Phasellus efficitur nisl eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sed in mattis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending-section">
+                        <h2 class="section-title">Trending</h2>
+                        <div class="panel-card trending-card">
+                            <!-- 1. User One -->
+                        <div class="trending-item">
+                        <div class="avatar-trend user1">T</div>
+                        <div class="trending-details">
+                        <span class="user-handle">@tegan</span>
+                        <span class="user-subtext">World Peace Builder</span>
+                    </div>
+                </div>
+
+                            <!-- 2. User Two -->
+                        <div class="trending-item">
+                        <div class="avatar-trend user2">M</div>
+                        <div class="trending-details">
+                      <span class="user-handle">@morgan</span>
+                      <span class="user-subtext">Super Cool Project</span>
+                </div>
+            </div>
+
+                        <!-- 3. User Three -->
+                    <div class="trending-item">
+                    <div class="avatar-trend user3">K</div>
+                    <div class="trending-details">
+                    <span class="user-handle">@kendall</span>
+                    <span class="user-subtext">Life Changing App</span>
+                </div>
+            </div>
+
+                         <!-- 4. User Four -->
+                        <div class="trending-item">
+                        <div class="avatar-trend user4">A</div>
+                        <div class="trending-details">
+                        <span class="user-handle">@alex</span>
+                        <span class="user-subtext">No Traffic Maker</span>
+                    </div>
+                </div>
+                        
+                </div>
+              </div>
+
+            </div> <!-- Closes .side-panel -->
+
+            </main> <!-- Closes .dashboard-content -->
+        </div> <!-- Closes .main-content -->
+    </div> <!-- Closes .dashboard-container -->
+
+</body>
+</html>
